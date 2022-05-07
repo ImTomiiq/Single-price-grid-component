@@ -22,12 +22,14 @@ html {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   padding-inline: 3rem;
   background-color: red;
 }
 .card--1 {
-  background-color: $color-gray;
+  background-color: white;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
   padding: 2rem;
   &__header {
     color: $color-gray-blue;
@@ -42,5 +44,64 @@ html {
   &__content {
     font-size: 1.4rem;
     line-height: 2.5rem;
+  }
+}
+
+.card--2 {
+  background-color: #2bb3b1;
+  padding: 2rem;
+  &__header {
+    color: $color-gray;
+    margin-bottom: 1rem;
+  }
+  &__price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    h3 {
+      color: white;
+      font-size: 3rem;
+      margin-right: 1.5rem;
+    }
+    span {
+      font-size: 1.5rem;
+      color: $color-gray;
+    }
+  }
+  p {
+    color: $color-gray;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  &__button {
+    button {
+      background-color: $color-yellow;
+      border: none;
+      outline: none;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      width: 100%;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+  }
+}
+
+.card--3 {
+  background-color: #4abebd;
+  padding: 2rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  &__header {
+    color: $color-gray;
+    margin-bottom: 1.5rem;
+  }
+  &__list {
+    li {
+      list-style: none;
+      color: #9fedeb;
+      font-size: 1.5rem;
+    }
   }
 }
