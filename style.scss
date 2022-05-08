@@ -70,6 +70,7 @@ html {
     span {
       font-size: 1.5rem;
       color: $color-gray;
+      opacity: 0.5;
     }
   }
   p {
@@ -89,6 +90,11 @@ html {
       font-size: 1.5rem;
       font-weight: 700;
       box-shadow: 2px 9px 15px 5px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+      transition: all 0.25s;
+      &:hover {
+        background-color: hsl(71, 92%, 41%);
+      }
     }
   }
 }
@@ -142,6 +148,16 @@ html {
 
   .card--2 {
     border-bottom-left-radius: 0.5rem;
+    p {
+      font-size: 2rem;
+    }
+    &__price {
+      span {
+        font-size: 1.75rem;
+        color: $color-gray;
+        opacity: 0.5;
+      }
+    }
   }
 
   .card--3 {
